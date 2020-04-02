@@ -1,15 +1,19 @@
 package entity;
 
 public class Guest {
-    String guestName;
-    String creditCardDetails; // Should we create a separate class for this?
-    String address;
-    String country;
-    String gender;
-    String passport;
-    String drivingLicense;
-    String nationality;
-    String contact;
+    private String guestName;
+    private String creditCardDetails; // Should we create a separate class for this?
+    private String address;
+    private String country;
+    private String gender;
+    private String passport;
+    private String drivingLicense;
+    private String nationality;
+    private String contact;
+    /*CreditCard credit;
+    String creditCardDetails;
+    String billingAddress;*/
+    
     // int roomNum; //?
 
     public Guest(String guestName, String creditCardDetails, String address, String country, String gender, String passport, String drivingLicense, String nationality, String contact) {
@@ -95,19 +99,18 @@ public class Guest {
     public void setContact(String contact) {
         this.contact = contact;
     }
-
     @Override
     public String toString() {
-        return "Guest{" +
-                "guestName='" + guestName + '\'' +
-                ", creditCardDetails='" + creditCardDetails + '\'' +
-                ", address='" + address + '\'' +
-                ", country='" + country + '\'' +
-                ", gender='" + gender + '\'' +
-                ", passport='" + passport + '\'' +
-                ", drivingLicense='" + drivingLicense + '\'' +
-                ", nationality='" + nationality + '\'' +
-                ", contact='" + contact + '\'' +
+        return "Guest{" + '\n' + 
+                "guestName= " + guestName + '\n' +
+                "creditCardDetails= " + creditCardDetails + '\n' +
+                "address= " + address + '\n' +
+                "country= " + country + '\n' +
+                "gender= " + gender + '\n' +
+                "passport= " + passport + '\n' +
+                "drivingLicense= " + drivingLicense + '\n' +
+                "nationality= " + nationality + '\n' +
+                "contact= " + contact + '\n' +
                 '}';
     }
 }
